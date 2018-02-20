@@ -55,7 +55,7 @@
 	.admin-color-fresh .redux-container-image_select .redux-image-select-selected img, .wp-customizer .redux-container-image_select .redux-image-select-selected img {
 		border-color: #19a1f7!important;
 	}
-	.admin-color-fresh .redux-container .redux-main .button {
+	.admin-color-fresh .redux-container .redux-main .button:not(.wp-picker-default) {
 		text-shadow: none!important;
 		box-shadow: none!important;
 		border: none;
@@ -64,6 +64,8 @@
 		margin: 6px 3px;
 		transition: all 0.13s linear;
 	}
+
+	.wbc_importer .importer-button { margin-top: 0!important;  margin-bottom: 0!important;}
 	.redux-main #redux_ajax_overlay {
 		background-color: #fff;
 		opacity: 0.55;
@@ -75,7 +77,7 @@
 		margin-top: 0!important;
 		margin-bottom: 0!important;
 	}
-	.redux-container .redux-main .button {
+	.redux-container .redux-main .button:not(.wp-picker-default) {
 		margin: 6px 3px;
 	}
 	.admin-color-fresh .redux-container .redux-main .button:hover {
@@ -121,7 +123,7 @@
 	}
 	.redux-container .secondary-header h4 {
 		text-shadow: none;
-		font-weight: 300!important;
+		font-weight: 400!important;
 	}
 	.redux-container .redux-sidebar, .redux-container .display_header {
 		width: 255px;
@@ -142,7 +144,7 @@
 		display: inline-block;
 	}
 
-	.redux-main {
+	.redux-container .redux-main {
 		margin-left: 255px;
 	}
 
@@ -226,7 +228,7 @@
 	}
 
 	html .redux-container  .redux-sidebar .redux-group-menu * {
-		font-weight: 300!important;
+		font-weight: 400!important;
 	}
 
 	html .redux-container  .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a, .wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a {
@@ -266,6 +268,19 @@
 	}
 	 html .redux-sidebar .redux-group-menu li.active.hasSubSections .active a:after,  html .redux-container  .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .active a:after, .wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections .active a:after, .wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .active a:after {
 		display: none!important;
+	}
+	.redux-container .redux-main .form-table tr td .wbc_importer .theme .theme-actions {
+    -webkit-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+		top: auto;
+    height: 38px;
+		transform: none;
+    padding: 9px 10px 0;
+    background: rgba(244,244,244,.7);
+    border-left: 1px solid rgba(0,0,0,.05);
 	}
 
 }

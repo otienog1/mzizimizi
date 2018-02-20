@@ -19,7 +19,7 @@
 <?php 
 $options = get_nectar_theme_options(); 
 $fw_class = (!empty($options['theme-skin']) && $options['theme-skin'] == 'ascend') ? 'full-width-section custom-skip': null; ?>
-<div class="comment-wrap <?php echo $fw_class;?>">
+<div class="comment-wrap <?php echo $fw_class;?>" data-midnight="dark">
 
 <?php if ( have_comments() ) : ?>
 	<h3 id="comments"><?php  if(!empty($options['theme-skin']) && $options['theme-skin'] == 'ascend') echo '<span><i>'. __("Join the discussion", NECTAR_THEME_NAME).'</i></span>' ?> <?php comments_number(__('No Comments',NECTAR_THEME_NAME), __('One Comment', NECTAR_THEME_NAME), __('% Comments', NECTAR_THEME_NAME) );?></h3>

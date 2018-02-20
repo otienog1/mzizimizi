@@ -3,7 +3,7 @@
 
 	$is_admin = is_admin();
 
-	$slider_locations = ($is_admin) ? get_terms('slider-locations') : array('All' => 'all');
+	$slider_locations = ($is_admin) ? get_terms( array( 'taxonomy' => 'slider-locations') ) : array('All' => 'all');
 	$locations = array();
 
 	if($is_admin) {

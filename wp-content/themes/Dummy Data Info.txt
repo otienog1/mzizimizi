@@ -1,0 +1,1 @@
+The dummy data files are now able to be imported from the theme options panel! If you would still like to know their whereabouts, you can find them in salient/nectar/redux-framework/extensions/wbc_importer - Cheers!
